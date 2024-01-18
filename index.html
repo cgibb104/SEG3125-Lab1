@@ -1,12 +1,3 @@
-<! This little bit of code started with https://www.wikihow.com/Create-a-Questionnaire-in-HTML and got modified, by then using info from w3schools.com to continue.
-
-This is an UGLY survey....  PLEASE MODIFY IT!
-
-Caroline Barrière
-May 2020
-
->
-
 <!--Edited by Christian Gibbs-->
 
 <!DOCTYPE html>
@@ -30,7 +21,7 @@ May 2020
 		<br>
 		<br>
 		<! You should make your image clickable>
-		<img src="CBC_Frontpage.PNG" alt="https://www.cbc.ca/" width="750" height="300">
+		<a href="https://www.cbc.ca/"><img src="CBC_Frontpage.PNG" alt="https://www.cbc.ca/" width="750" height="300"></a>
 		<br>
 		<br>
 
@@ -47,41 +38,62 @@ May 2020
 			<h2> What you like </h2>
 
 
-			<label for="fname">First name:</label><br>
- 			<input type="text" id="fname" name="fname"><br>
+			<label for="purpose">Why do you use this website?</label><br>
+ 			<input type="text" id="purpose" name="purpose"><br>
 
- 			How do you feel about the logo placement?:<br>	<!--Text Question-->
+ 			<!-- How do you feel about the logo placement?:<br>
 			<textarea rows="5" cols="30"></textarea>
+			<br> -->
+			<p>On a scale from 1 to 5 how much do you like the look of the website: <br> <!--Radio Single Select-->
+				<input type="radio" id="q1" name="Question1" value="Question1">
+				<label for="q1">1 (I don't like it at all)</label><br>
+				<input type="radio" id="q1" name="Question1" value="Question2">
+				<label for="q2">2</label><br>
+				<input type="radio" id="q1" name="Question1" value="Question3">
+				<label for="q3">3</label><br>
+				<input type="radio" id="q1" name="Question1" value="Question4">
+				<label for="q4">4</label><br>
+				<input type="radio" id="q1" name="Question1" value="Question5">
+				<label for="q5">5 (I like it a lot)</label><br>
+			</p>
 
-			I like:<br> <!--Multiple Selection1-->
-			<input type="checkbox" name="Color" value="Red">Red<br>
-			<input type="checkbox" name="Color" value="Green">Green<br>
-			<input type="checkbox" name="Color" value="Blue">Blue<br>
-			
-			<br>
 
-			I don't like:<br> <!--Multiple Selection1-->
-			<input type="checkbox" name="Value" value="1">1<br>
-			<input type="checkbox" name="Value" value="2">2<br>
-			<input type="checkbox" name="Value" value="3">3<br>
-			
-			<br>
-			
-			What is your favorite fruit?<br> <!--List Single Select--> 
+			<p>On a scale from 1 to 5 how easy is it to navigate/understand : <br> <!--Radio Single Select-->
+				<input type="radio" id="q2" name="Question2" value="Question1">
+				<label for="q2">1 (Very easy)</label><br>
+				<input type="radio" id="q2" name="Question2" value="Question2">
+				<label for="q2">2</label><br>
+				<input type="radio" id="q2" name="Question2" value="Question3">
+				<label for="q3">3</label><br>
+				<input type="radio" id="q2" name="Question2" value="Question4">
+				<label for="q4">4</label><br>
+				<input type="radio" id="q2" name="Question2" value="Question5">
+				<label for="q5">5 (Very hard)</label><br>
+			</p>
+
+			What is your favorite part of the website<br> <!--List Single Select--> 
 			<select id="favorite">
-				<option value="Apples" selected="selected">Apples</option>
-				<option value="Oranges">Oranges</option>
-				<option value="Bananas">Bananas</option>
+				<option value="1" selected="selected">Articles/Videos</option>
+				<option value="2">The look of the website</option>
+				<option value="3">Easily accessible</option>
+				<option value="4">Other</option>
 			</select>
+			<br>
+			<br>
+
+			What could be improved?:<br> <!--Multiple Selection1-->
+			<input type="checkbox" name="Color" value="Red">How it looks<br>
+			<input type="checkbox" name="Color" value="Green">Layout of buttons and articles<br>
+			<input type="checkbox" name="Color" value="Blue">Other<br>
+			
+			<br>
 			
 
-			<p>Please select your :</p> <!--Radio Single Select-->
-			<input type="radio" id="q1" name="Question1" value="Question1">
-			<label for="q1">Question1</label><br>
-			<input type="radio" id="q1" name="Question2" value="Question2">
-			<label for="q2">Question2</label><br>
-
-
+			If Other was selected please explain:<br>	<!--Comments-->
+			<textarea rows="5" cols="30"></textarea>
+			
+			<br>
+			
 
 			<br>
 			<br>
