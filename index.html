@@ -6,18 +6,20 @@
   <head>
     <meta charset="utf-8">
 		<! IMPORTANT to use a CSS file - external >
-		<link href="style.css" rel="stylesheet" type="text/css">
+		<link href="styles.css" rel="stylesheet" type="text/css">
     <title>Questionnaire of CBC.ca</title>
   </head>
   
   <body>
-		<h1>Survey</h1>
+		<div class="header">
+			<h2 class="survey">Survey</h2>
+		</div>
+		
 		<form id="myform" action="index.php" >
 		<br>
 		<br>
 		<! Choose a website to evaluate >
-		<h3><i>This is a terribly ugly page... please modify it!</i></h3>
-		<h2>What do you think of the UI in this <a href="https://www.cbc.ca/">CBC</a> site?</h2>	
+		<h2 class="surveyHeader">Let us know what you think about this <a href="https://www.cbc.ca/">CBC</a> site?</h2>	
 		<br>
 		<br>
 		<! You should make your image clickable>
@@ -26,7 +28,7 @@
 		<br>
 
 		<div class="question"> <!--Personal information-->
-			<h2> Personal Information </h2>
+			<h2 class="section"> Personal Information </h2>
 			<p>First name: <input type="text" name="firstname"></p>
 			<p>Last name: <input type="text" name="lastname"></p>
 			<br>
@@ -35,11 +37,7 @@
 			
 		<div class="question"> <!--Questions: 
 				Text, Multi-Selectx2, Radio Choice, List Choice,-->
-			<h2> What you like </h2>
-
-
-			<label for="purpose">Why do you use this website?</label><br>
- 			<input type="text" id="purpose" name="purpose"><br>
+			<h2 class="section"> What you like </h2>
 
  			<!-- How do you feel about the logo placement?:<br>
 			<textarea rows="5" cols="30"></textarea>
@@ -71,7 +69,7 @@
 				<label for="q5">5 (Very hard)</label><br>
 			</p>
 
-			What is your favorite part of the website<br> <!--List Single Select--> 
+			<p>What is your favorite part of the website</p><br> <!--List Single Select--> 
 			<select id="favorite">
 				<option value="1" selected="selected">Articles/Videos</option>
 				<option value="2">The look of the website</option>
@@ -81,15 +79,18 @@
 			<br>
 			<br>
 
-			What could be improved?:<br> <!--Multiple Selection1-->
+			<p>What could be improved?:</p><br> <!--Multiple Selection1-->
 			<input type="checkbox" name="Color" value="Red">How it looks<br>
 			<input type="checkbox" name="Color" value="Green">Layout of buttons and articles<br>
 			<input type="checkbox" name="Color" value="Blue">Other<br>
 			
 			<br>
+
+			<label for="purpose"><p>Why do you use this website?</p></label><br>
+			<input type="text" id="purpose" name="purpose"><br>
 			
 
-			If Other was selected please explain:<br>	<!--Comments-->
+		<p>If Other was selected please explain:</p><br>	<!--Comments-->
 			<textarea rows="5" cols="30"></textarea>
 			
 			<br>
@@ -97,7 +98,7 @@
 
 			<br>
 			<br>
-			Addtionnal Comments?:<br>	<!--Comments-->
+		<p>Addtionnal Comments?:</p><br>	<!--Comments-->
 			<textarea rows="5" cols="30"></textarea>
 			<br>
 			<br>
@@ -108,10 +109,10 @@
 	
 			
 	<button id="submitButton" type="button" class="block">
-		SUBMIT your CBC.ca review
+		SUBMIT 
 	</button>
 		
-	<p id="signature">Website designed by Christian Gibbs and Keynaan Ismail</p>	
+	<p id="signature">Website designed by Christian Gibbs ,Keynaan Ismail and IleriOluwa Fasubaa</p>	
 	
 	</form>
   </body>

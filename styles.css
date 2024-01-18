@@ -7,20 +7,13 @@ html {
   background-color: white;
 }
  
-body {
-  background-color: powderblue;
-  width: 600px;
-  border: 2px solid black;
-  padding: 0px 20px 20px 20px;
-  
-}
 
 h1 {
 	font-size: 60px;
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
-	color: #ff00ff;  /* Fuchsia */
+	color: #fff;  /* Fuchsia */
 	text-shadow: 3px 3px 1px black;
 }
 
@@ -28,10 +21,12 @@ img {
   display: block;
   margin: 0 auto;
   align: center;
+  width: 590px;
 }
 
 p {
-  color: red;
+  color: black;
+  font-size: 20px ;
 }
 
 table {
@@ -39,12 +34,23 @@ table {
 	background-color: #f1f1c1;
 }
 
+input{
+  border-radius: 5px;
+}
+
 /* Defining styling for a specific element type - each question */
 .question {
-  background-color: black;
-  color: white;
+  background-color: lightgrey;
+  color: black;
   margin: 20px;
   padding: 20px;
+  border-radius: 10px;
+  border-color: black;
+}
+
+.survey{
+  color: red;
+  padding-left: 35px;
 }
 
 /* Defining styling for a specific element type - large block buttons */
@@ -52,17 +58,32 @@ table {
   display: block;
   width: 100%;
   border: none;
-  background-color: #ffff66;  /* yellow */
+  background-color:red;  /* yellow */
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
 }
 
 /* Defining styling for a specific element with an id */
 #signature {
   text-align: right;
-  color: red;
+  color: black;
   font-style: italic;
   font-size: 75%;
+}
+
+.header{
+  border-bottom: 2px solid lightgrey;
+}
+
+.surveyHeader{
+  text-align: center;
+}
+
+.section{
+  color: red;
 }
